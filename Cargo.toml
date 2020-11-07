@@ -2,4 +2,5 @@
 members=[
   "thread_local_test",
   "tokio_with_cpp_thread",
+  "speed_test",
 ]
