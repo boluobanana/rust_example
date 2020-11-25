@@ -1,12 +1,18 @@
 use std::fmt::Debug;
+use std::fmt;
 
-#[derive(Debug)]
+#[derive( Clone)]
 pub struct Node<T: Clone + PartialEq+ Eq> {
   pub left: Option<Box<Node<T>>>,
   pub right: Option<Box<Node<T>>>,
   pub val: T,
 }
 
+impl<T: Debug + PartialEq + Eq + Clone> fmt::Debug for Node<T> {
+  fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
+    f.write_fmt(format_args!("V:{:?} L:{:?} R:{:?}", self.val, self.left, self.right))
+  }
+}
 
 impl<T: Clone + PartialEq + Eq + std::cmp::PartialOrd + Debug> Node<T> {
   pub fn new(val: T) -> Self{
