@@ -32,7 +32,9 @@ impl PartialEq for Op {
 }
 impl Eq for Op {}
 
-
+/// 这里测试了给enum设置到hash后，会是怎么样的表现形式
+/// 测试结果就是，如果是default的hash实现的话，每个值的改变会生成一个新的hash
+/// 如果自己空实现了hash的话，无论值怎么变都是一个hash，改变就可以用replace
 fn main() {
     let a: u32= 3;
     let b : u32= 2;
