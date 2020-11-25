@@ -7,4 +7,5 @@ members=[
   "system_api_test",
   "hash_test",
   "serde_example",
+  "btree",
 ]
