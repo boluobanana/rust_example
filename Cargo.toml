@@ -6,6 +6,8 @@ members=[
   "option_test",
   "system_api_test",
   "hash_test",
+  "lazy_init_test",
+  "empty_test",
   "serde_example",
   "btree",
 ]

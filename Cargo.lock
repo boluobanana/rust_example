@@ -44,6 +44,10 @@ dependencies = [
 ]
 
 [[package]]
+name = "empty_test"
+version = "0.1.0"
+
+[[package]]
 name = "fnv"
 version = "1.0.7"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -116,6 +120,13 @@ checksum = "7507624b29483431c0ba2d82aece8ca6cdba9382bff4ddd0f7490560c056098d"
 dependencies = [
  "winapi 0.2.8",
  "winapi-build",
+]
+
+[[package]]
+name = "lazy_init_test"
+version = "0.1.0"
+dependencies = [
+ "lazy_static",
 ]
 
 [[package]]
