@@ -8,6 +8,8 @@ members=[
   "hash_test",
   "lazy_init_test",
   "empty_test",
+  "dylib_window_example",
+  "run_dylib_example",
   "serde_example",
   "btree",
 ]
