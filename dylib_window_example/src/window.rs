@@ -7,7 +7,7 @@ use winit::{
 };
 
 pub(crate) fn create_and_open() {
-    simple_logger::init().unwrap();
+    // simple_logger::init().unwrap();
     let event_loop = EventLoop::new();
 
     let _window = WindowBuilder::new()
@@ -18,7 +18,7 @@ pub(crate) fn create_and_open() {
     let timer_length = Duration::new(1, 0);
 
     event_loop.run(move |event, _, control_flow| {
-        println!("{:?}", event);
+        // println!("{:?}", event);
 
         match event {
             Event::NewEvents(StartCause::Init) => {
@@ -26,7 +26,7 @@ pub(crate) fn create_and_open() {
             }
             Event::NewEvents(StartCause::ResumeTimeReached { .. }) => {
                 *control_flow = ControlFlow::WaitUntil(Instant::now() + timer_length);
-                println!("\nTimer\n");
+                // println!("\nTimer\n");
             }
             Event::WindowEvent {
                 event: WindowEvent::CloseRequested,
