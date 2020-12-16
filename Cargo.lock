@@ -1076,6 +1076,13 @@ dependencies = [
 ]
 
 [[package]]
+name = "tokio_join_test"
+version = "0.1.0"
+dependencies = [
+ "tokio",
+]
+
+[[package]]
 name = "tokio_with_cpp_thread"
 version = "0.1.0"
 dependencies = [

@@ -11,5 +11,6 @@ members=[
   "dylib_window_example",
   "run_dylib_example",
   "serde_example",
+  "tokio_join_test",
   "btree",
 ]
