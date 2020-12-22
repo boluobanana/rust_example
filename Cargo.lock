@@ -913,6 +913,13 @@ dependencies = [
 ]
 
 [[package]]
+name = "signal_test"
+version = "0.1.0"
+dependencies = [
+ "tokio",
+]
+
+[[package]]
 name = "simple_logger"
 version = "1.11.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
